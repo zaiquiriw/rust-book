@@ -1,0 +1,11 @@
+# This modifies cargo for this workspace
+
+# Sub folders should not be sepearate repos, even if they are cargo projects
+[cargo-new]
+vcs = "none"
+
+[alias]
+check-all = "check --workspace"
+test-all = "test --workspace"
+build-all = "build --workspace"
+tree = "tree --workspace"

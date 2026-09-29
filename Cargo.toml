@@ -1,0 +1,9 @@
+# This lets me set cargo packages in this directory to be subpackages of this cargo workspace
+
+[workspace]
+# TODO: I don't know what this does
+resolver = "3"
+
+# TODO: I should learn more about members and blobs
+members = ["[0-9][0-9]-*/[!_]*"]
+exclude = ["*/[_]*"]
